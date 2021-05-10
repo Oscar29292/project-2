@@ -13,7 +13,7 @@ body {
   /* font: 16px / 1.42 "Roboto", Arial, sans-serif; */
   color: #ffffff;
   background: #001821; /* Параметры фона */
-  background-image: url(/img/fon/fon-elephant.png), url(/img/fon/fon-men.png); /* Путь к фоновому рисунку */
+  background-image: url(./img/fon/fon-elephant.png), url(./img/fon/fon-men.png); /* Путь к фоновому рисунку */
   background-position: top center, bottom; /* Положение фона */
   background-repeat: no-repeat; /* Отменяем повторение фона */
 }
@@ -21,7 +21,6 @@ body {
 .container {
   margin: 0 auto;
   width: 1141px;
-  background-color: rgba(255, 166, 0, 0);
 }
 
 .wrapper {
