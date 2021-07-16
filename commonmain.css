@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  line-height: 1.42;
+  font-size: 16px;
+  color: #ffffff;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+a {
+  color: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1141px;
+}
+
+.logo__img {
+  width: 85px;
+  height: auto;
+}
+
+.menu {
+  flex: 2;
+  margin-top: 15px;
+}
+
+.menu__list {
+  display: flex;
+  list-style-type: none;
+  font-size: 14px;
+  margin: 0;
+  padding-right: 79px;
+}
+
+.menu__item {
+  margin-right: 54px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contacts__phone {
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.contacts__dropdown-title {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+  text-decoration: underline;
+  margin-top: -7px;
+}

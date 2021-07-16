@@ -13,54 +13,56 @@
     <link rel="stylesheet" href="./air.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper main-page-wrapper">
       <header class="header">
-        <div class="header__container">
-          <a href="" class="header-logo">
-            <img src="./img/logo/logo.png" class="header-img" alt="" />
+        <div class="header__col">
+          <a href="/" class="logo">
+            <img
+              src="./img/logo/logo.png"
+              class="logo__img"
+              alt="air asia logo"
+            />
           </a>
-          <div class="header-menu">
-            <ul class="header-menu__list">
-              <li class="header-menu__item">
-                <a href="#" class="header-menu__link">Главная</a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Главная</a>
               </li>
-              <li class="header-menu__item">
-                <a href="#" class="header-menu__link">Услуги</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Услуги</a>
               </li>
-              <li class="header-menu__item">
-                <a href="#" class="header-menu__link">Отзывы</a>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Отзывы</a>
               </li>
             </ul>
-          </div>
-          <div class="header-tel">
-            <a href="tel.:+78007003030" class="header-tel__number">
+          </nav>
+        </div>
+        <div class="header__col header__col--aligh--right">
+          <address class="contacts">
+            <a href="tel:+78007003030" class="contacts__phone">
               8 800 700-30-30
             </a>
-            <div class="header-tel__title">График работы</div>
-          </div>
+            <div class="contacts__dropdown-title">График работы</div>
+          </address>
         </div>
       </header>
       <section class="hero">
-        <div class="hero__container">
+        <div class="container">
           <div class="hero__box">
-            <h1 class="hero__title">
-              Авторские
-              <br />
-              туры по Азии
-            </h1>
+            <h1 class="hero__title">Авторские туры по Азии</h1>
             <p class="hero__desc">Открой для себя Азию</p>
-            <button class="hero__btn">ПОДРОБНЕЕ</button>
+            <button class="btn">ПОДРОБНЕЕ</button>
           </div>
         </div>
       </section>
       <section class="hot-tour">
-        <div class="hot-container">
+        <div class="container">
           <h2 class="hot-title">Горящие туры</h2>
           <ul class="hot-cont">
             <li class="hot-cont__countries">
               <img class="hot-cont__img" src="./img/tour/river.png" alt="" />
-              <div class="hot-predlog">
-                <h2 class="hot-predlog__title">Таиланд</h2>
+              <div class="hot-offer">
+                <h2 class="hot-offer__title">Таиланд</h2>
                 <ul class="day">
                   <li class="day-item">
                     <img
@@ -85,8 +87,8 @@
 
             <div class="hot-cont__countries">
               <img class="hot-cont__img" src="./img/tour/pool.png" alt="" />
-              <div class="hot-predlog">
-                <h2 class="hot-predlog__title">Бали</h2>
+              <div class="hot-offer">
+                <h2 class="hot-offer__title">Бали</h2>
                 <ul class="day">
                   <li class="day-item">
                     <img
@@ -111,8 +113,8 @@
 
             <div class="hot-cont__countries">
               <img class="hot-cont__img" src="./img/tour/ocean.png" alt="" />
-              <div class="hot-predlog">
-                <h2 class="hot-predlog__title">Индонезия</h2>
+              <div class="hot-offer">
+                <h2 class="hot-offer__title">Индонезия</h2>
                 <ul class="day">
                   <li class="day-item">
                     <img
@@ -139,8 +141,8 @@
       </section>
 
       <section class="news">
-        <div class="naws__container">
-          <h2 class="hot-title">Новости и Акции</h2>
+        <div class="container">
+          <h2 class="new-title">Новости и Акции</h2>
           <ul class="news__list">
             <li class="news__item">
               <img class="news__img" src="./img/news/plain.png" alt="" />
@@ -192,7 +194,7 @@
         </div>
       </section>
       <section class="about">
-        <div class="about__container">
+        <div class="container">
           <img class="about__moto" src="./img/about/moto.png" alt="moto" />
           <div class="about__box">
             <div class="about__item">
@@ -203,20 +205,22 @@
               />
               <div class="about__text">
                 <h2 class="about__title">О нас</h2>
-                <p class="about__sabtitle">
-                  Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
-                  сгенерировать несколько абзацев более менее осмысленного
-                  текста рыбы на русском языке, а начинающему оратору отточить
-                  навык публичных выступлений в домашних условиях.
-                </p>
-                <button class="about__btn">ПОДРОБНЕЕ</button>
+                <div class="about__sabtitle">
+                  <p>
+                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                    сгенерировать несколько абзацев более менее осмысленного
+                    текста рыбы на русском языке, а начинающему оратору отточить
+                    навык публичных выступлений в домашних условиях.
+                  </p>
+                </div>
+                <button class="btn">ПОДРОБНЕЕ</button>
               </div>
             </div>
           </div>
         </div>
       </section>
       <footer class="footer">
-        <div class="footer__container">
+        <div class="container">
           <div class="footer__box">
             <a href="" class="footer-logo">
               <img src="./img/logo/logo.png" class="footer-img" alt="" />
