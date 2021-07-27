@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&display=swap"
@@ -62,16 +63,18 @@
 
       <section class="review">
         <div class="container">
-          <div class="review-colum">
-            <div class="review-colum__left">
-              <div class="review-colum__block">
-                <div class="review-colum__content">
-                  <img
-                    class="review-colum__avatar"
-                    src="./img/avatars/ivan.png"
-                    alt=""
-                  />
-                  <div class="review-colum__description">
+          <div class="review__wrapper">
+            <div class="review__col">
+              <div class="review__block">
+                <div class="review__content">
+                  <div class="review__avatar">
+                    <img
+                      class="review__img"
+                      src="./img/avatars/ivan.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="review__info">
                     <div class="review-name">
                       <h2 class="review-name__title">Иван Петрович</h2>
                       <img
@@ -80,12 +83,12 @@
                         alt=""
                       />
                     </div>
-                    <span class="review-name__tour">Водопад Янг-бей</span>
+                    <span class="review-name__tag">Водопад Янг-бей</span>
                   </div>
                 </div>
 
                 <h2 class="review__title">Крутой поход на водопады.</h2>
-                <p class="review__sabtitle">
+                <p class="review__text">
                   Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
                   сгенерировать несколько абзацев более менее осмысленного
                   текста рыбы на русском языке, а начинающему оратору отточить
@@ -93,17 +96,19 @@
                   генератора мы использовали небезизвестный универсальный код
                   речей.
                 </p>
-                <p class="review__data">Ноябрь 2019</p>
+                <time class="review__data">Ноябрь 2019</time>
               </div>
 
-              <div class="review-colum__block">
-                <div class="review-colum__content">
-                  <img
-                    class="review-colum__avatar"
-                    src="./img/avatars/liza.png"
-                    alt=""
-                  />
-                  <div class="review-colum__description">
+              <div class="review__block">
+                <div class="review__content">
+                  <div class="review__avatar">
+                    <img
+                      class="review__img"
+                      src="./img/avatars/liza.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="review__info">
                     <div class="review-name">
                       <h2 class="review-name__title">Лиза Сидорова</h2>
                       <img
@@ -112,12 +117,12 @@
                         alt=""
                       />
                     </div>
-                    <span class="review-name__tour">Тур по Тайланду</span>
+                    <span class="review-name__tag">Тур по Тайланду</span>
                   </div>
                 </div>
 
                 <h2 class="review__title">Интерестный тур по Таю.</h2>
-                <p class="review__sabtitle">
+                <p class="review__text">
                   Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
                   сгенерировать несколько абзацев более менее осмысленного
                   текста рыбы на русском языке, а начинающему оратору отточить
@@ -125,18 +130,21 @@
                   генератора мы использовали небезизвестный универсальный код
                   речей.
                 </p>
-                <p class="review__data">Ноябрь 2019</p>
+
+                <time class="review__data">Ноябрь 2019</time>
               </div>
             </div>
-            <div class="colum-right">
-              <div class="review-colum__block">
-                <div class="review-colum__content">
-                  <img
-                    class="review-colum__avatar"
-                    src="./img/avatars/katia.png"
-                    alt=""
-                  />
-                  <div class="review-colum__description">
+            <div class="review__col">
+              <div class="review__block">
+                <div class="review__content">
+                  <div class="review__avatar">
+                    <img
+                      class="review__img"
+                      src="./img/avatars/katia.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="review__info">
                     <div class="review-name">
                       <h2 class="review-name__title">Екатерина Жмых</h2>
                       <img
@@ -145,14 +153,14 @@
                         alt=""
                       />
                     </div>
-                    <span class="review-name__tour">Тур на Остров обезьян</span>
+                    <span class="review-name__tag">Тур на Остров обезьян</span>
                   </div>
                 </div>
 
                 <h2 class="review__title">
                   Очень понравился тур на остров обезьян.
                 </h2>
-                <p class="review__sabtitle">
+                <p class="review__text">
                   Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
                   сгенерировать несколько абзацев более менее осмысленного
                   текста рыбы на русском языке, а начинающему оратору отточить
@@ -163,16 +171,18 @@
                   более привлекательным и живым для визуально-слухового
                   восприятия.
                 </p>
-                <p class="review__data">Ноябрь 2019</p>
+                <time class="review__data">Ноябрь 2019</time>
               </div>
-              <div class="review-colum__block">
-                <div class="review-colum__content">
-                  <img
-                    class="review-colum__avatar"
-                    src="./img/avatars/anton.png"
-                    alt=""
-                  />
-                  <div class="review-colum__description">
+              <div class="review__block">
+                <div class="review__content">
+                  <div class="review__avatar">
+                    <img
+                      class="review__img"
+                      src="./img/avatars/anton.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="review__info">
                     <div class="review-name">
                       <h2 class="review-name__title">Антон Игоревич</h2>
                       <img
@@ -181,14 +191,14 @@
                         alt=""
                       />
                     </div>
-                    <span class="review-name__tour">Тур по Индонезии</span>
+                    <span class="review-name__tag">Тур по Индонезии</span>
                   </div>
                 </div>
 
                 <h2 class="review__title">
                   Для первого раза выбрал тур по Индонезии. И не пожалел!
                 </h2>
-                <p class="review__sabtitle">
+                <p class="review__text">
                   Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
                   сгенерировать несколько абзацев более менее осмысленного
                   текста рыбы на русском языке, а начинающему оратору отточить
@@ -196,33 +206,33 @@
                   генератора мы использовали небезизвестный универсальный код
                   речей.
                 </p>
-                <p class="review__data">Ноябрь 2019</p>
+                <time class="review__data">Ноябрь 2019</timе>
               </div>
             </div>
           </div>
 
           <div class="pages">
             <div class="pages__displey">страница 1-7</div>
-            <ul class="pages-list">
-              <li class="pages-item--active">
+            <ul class="pages__list">
+              <li class="pages__item--active">
                 <a href="#" class="pages__link">1</a>
               </li>
-              <li class="pages-item">
+              <li class="pages__item">
                 <a href="#" class="pages__link">2</a>
               </li>
-              <li class="pages-item">
+              <li class="pages__item">
                 <a href="#" class="pages__link">3</a>
               </li>
-              <li class="pages-item">
+              <li class="pages__item">
                 <a href="#" class="pages__link">4</a>
               </li>
-              <li class="pages-item">
+              <li class="pages__item">
                 <a href="#" class="pages__link">5</a>
               </li>
-              <li class="pages-item">
+              <li class="pages__item">
                 <a href="#" class="pages__link">6</a>
               </li>
-              <li class="pages-item">
+              <li class="pages__item">
                 <a href="#" class="pages__link">7</a>
               </li>
             </ul>
@@ -233,11 +243,11 @@
       <section class="offer">
         <div class="container">
           <div class="offer-box">
-            <div class="offer-box__title">
-              <h2 class="offer-box__text">Подберем тур по вашим пожеланиям</h2>
-            </div>
-            <div class="offer-box__img">
-              <img src="./img/rev/couple.png" alt="" class="offer-box__fon" />
+            
+              <h2 class="box__text">Подберем тур по вашим пожеланиям</h2>
+            
+            <div class="box__fon">
+              <img src="./img/rev/couple.png" alt="" class="box__img" />
             </div>
           </div>
         </div>
@@ -246,11 +256,21 @@
       <section class="feedback">
         <div class="container">
           <div class="feedback-box">
-            <div class="feedback-box__title">
-              <h2 class="feedback-box__text">Оставьте отзыв</h2>
-            </div>
+            <h2 class="feedback-box__text">Оставьте отзыв</h2>
 
-            <div class="feedback-user">
+            <form class="form">
+              <div class="form__row">
+                <input type="text" placeholder="фио" class="form__input">
+                <input type="text" placeholder="ссылка на профиль" class="form__input">
+              </div>
+
+              <div class="form__row">
+                <textarea class="form__input form__input--textarea"></textarea>
+               
+              </div>
+            </form>
+            
+            <!-- <div class="feedback-user">
               <div class="feedback-user__neme">
                 <p class="feedback-user__neme-text">Игорь Петрович</p>
               </div>
@@ -261,46 +281,46 @@
 
             <div class="feedback-reviews">
               <p class="feedback-reviews__text">Напишите свой честный отзыв</p>
-            </div>
+            </div> -->
             <div class="feedback-services">
               <div class="feedback-services__title">
                 <span class="feedback-services__text">
                   Какими услугами компании пользуетесь?
                 </span>
               </div>
-              <div class="feedback-tour">
-                <ul class="feedback-tour__name">
-                  <li class="feedback-tour__name-tatle">
-                    <span class="feedback-tour__name-text">Остров обезьян</span>
+              <div class="feedback-tags">
+                <ul class="feedback__tags-list">
+                  <li class="tags-item">
+                    <span class="tags-text">Остров обезьян</span>
                   </li>
-                  <li class="feedback-tour__name-tatle">
-                    <span class="feedback-tour__name-text">
+                  <li class="tags-item">
+                    <span class="tags-text">
                       Тур по Тайланду
                     </span>
                   </li>
-                  <li class="feedback-tour__name-tatle--active">
-                    <span class="feedback-tour__name-text">
+                  <li class="tags-item tags-item--active">
+                    <span class="tags-text">
                       Водопад Янг-бей
                     </span>
                   </li>
-                  <li class="feedback-tour__name-tatle">
-                    <span class="feedback-tour__name-text">
+                  <li class="tags-item">
+                    <span class="tags-text">
                       Тур по Индонезии
                     </span>
                   </li>
-                  <li class="feedback-tour__name-tatle">
-                    <span class="feedback-tour__name-text">Никакими</span>
+                  <li class="tags-item">
+                    <span class="tags-text">Никакими</span>
                   </li>
-                  <li class="feedback-tour__name-tatle">
-                    <span class="feedback-tour__name-text">Тур по Бали</span>
+                  <li class="tags-item">
+                    <span class="tags-text">Тур по Бали</span>
                   </li>
-                  <li class="feedback-tour__name-tatle">
-                    <span class="feedback-tour__name-text">Другое</span>
+                  <li class="tags-item">
+                    <span class="tags-text">Другое</span>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="feedback__batton">
+            <div class="feedback__button">
               <button class="feedback-btn">Очистить</button>
               <button class="feedback-btn--red">Отправить</button>
             </div>

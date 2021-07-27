@@ -25,14 +25,13 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1241px;
+  max-width: 1240px;
+  width: 100%;
 }
 
 .header {
   display: flex;
   padding: 25px 0 15px;
-  margin: 0 auto;
-  width: 1141px;
 }
 
 .logo__img {
@@ -41,7 +40,6 @@ body {
 }
 
 .menu {
-  flex: 2;
   margin-top: 15px;
 }
 
@@ -50,7 +48,6 @@ body {
   list-style-type: none;
   font-size: 14px;
   margin: 0;
-  padding-right: 79px;
 }
 
 .menu__item {
@@ -75,6 +72,7 @@ body {
 }
 
 .contacts {
+  margin-left: auto;
   font-style: normal;
 }
 
@@ -142,8 +140,7 @@ body {
   padding: 5px;
 }
 
-.review-colum__block {
-  overflow: hidden;
+.review__block {
   height: auto;
   background-color: #f4f5f5;
   border-radius: 5px;
@@ -154,20 +151,31 @@ body {
   padding-bottom: 32px;
 }
 
-.review-colum__content {
+.review__content {
   display: flex;
   position: relative;
   margin: 0;
   margin-bottom: 27px;
 }
 
-.review-colum__description {
+.review__info {
   margin: 0;
   padding: 0;
 }
 
-.review-colum__avatar {
-  padding-right: 22px;
+.review__avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #2e77a4;
+  margin-right: 22px;
+  overflow: hidden;
+}
+
+.review__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .review-name {
@@ -192,7 +200,7 @@ body {
   height: 30px;
 }
 
-.review-name__tour {
+.review-name__tag {
   font-size: 13px;
   color: #303030;
   position: absolute;
@@ -207,7 +215,7 @@ body {
   font-size: 30px;
   color: #000;
 }
-.review__sabtitle {
+.review__text {
   margin: 0;
   margin-bottom: 48px;
   font-size: 16px;
@@ -234,7 +242,7 @@ body {
   margin-right: 25px;
 }
 
-.pages-list {
+.pages__list {
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -255,7 +263,7 @@ body {
   text-align: center;
 }
 
-.pages-item--active .pages__link {
+.pages__item--active .pages__link {
   display: block;
   width: 32px;
   height: 32px;
@@ -270,20 +278,13 @@ body {
   text-align: center;
 }
 
-.review-colum {
+.review__wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 75px;
 }
 
-.review-colum__left {
-  justify-content: space-between;
-  margin: 0;
-  width: 49%;
-}
-.colum-right {
-  justify-content: space-between;
-  margin: 0;
+.review__col {
   width: 49%;
 }
 
@@ -293,22 +294,22 @@ body {
 
 .offer-box {
   display: flex;
-  height: 363px;
+  align-items: center;
 }
 
-.offer-box__title {
-  padding-top: 77px;
-}
-
-.offer-box__text {
+.box__text {
   font-size: 48px;
 }
 
-.offer-box__img {
-  padding-top: 10px;
+.box__fon {
+  width: 59%;
+  height: auto;
+  padding-top: 22px;
+  min-height: 150px;
 }
-.offer-box__fon {
-  width: 504px;
+.box__img {
+  display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -316,6 +317,34 @@ body {
   padding-top: 50px;
   padding-bottom: 96px;
   background: #f4f5f5;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form__input {
+  flex: 1;
+  margin-right: 30px;
+  border-radius: 4px;
+  border: none;
+  background: #fff;
+  padding: 22px 30px;
+  font-size: 18px;
+  color: #202123;
+}
+
+.form__input::placeholder {
+  color: #666;
+}
+
+form__input:last-child {
+  margin-right: 0px;
+}
+
+.form__input--textarea {
+  height: 232px;
 }
 
 .feedback-box__title {
@@ -327,7 +356,15 @@ body {
   color: #000;
 }
 
-.feedback-user {
+.feedback-services__title {
+  margin-left: 30px;
+}
+
+.feedback-tags {
+  margin: 0;
+}
+
+/* .feedback-user {
   justify-content: space-between;
   display: flex;
   margin-bottom: 28px;
@@ -378,7 +415,8 @@ body {
   color: #666666;
   font-size: 18px;
   margin: 0;
-}
+} */
+
 .feedback-services {
   display: flex;
   margin-bottom: 32px;
@@ -389,7 +427,7 @@ body {
   color: #1a1b1e;
 }
 
-.feedback-tour__name {
+.feedback__tags-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -397,15 +435,15 @@ body {
   list-style-type: none;
 }
 
-.feedback-tour__name-tatle {
+.tags-item {
   display: flex;
 }
 
-.feedback-tour__name-tatle--active .feedback-tour__name-text {
+.tags-item--active .tags-text {
   background-color: #b9eae4;
 }
 
-.feedback-tour__name-text {
+.tags-text {
   margin-right: 7px;
   margin-bottom: 10px;
   font-size: 13px;
@@ -415,7 +453,7 @@ body {
   border-radius: 35px;
 }
 
-.feedback__batton {
+.feedback__button {
   display: flex;
   justify-content: flex-end;
 }
@@ -446,15 +484,18 @@ body {
   color: #ffffff;
 }
 
+.feedback-btn--red:last-child {
+  margin-right: 0px;
+}
+
 .footer {
+  padding: 40px 10px;
   background-color: #001821;
+  border-top: 1px solid #c2b8b8a9;
 }
 
 .footer__box {
   display: flex;
-  border-top: 1px solid #c2b8b8a9;
-  padding-top: 45px;
-  padding-bottom: 35px;
 }
 
 .footer-img {
