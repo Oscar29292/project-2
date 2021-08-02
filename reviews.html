@@ -30,13 +30,13 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Главная</a>
+                  <a href="/" class="menu__link">Главная</a>
                 </li>
                 <li class="menu__item menu__item--active">
-                  <a href="#" class="menu__link">Услуги</a>
+                  <a href="/services.html" class="menu__link">Услуги</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="/reviews.html" class="menu__link">Отзывы</a>
                 </li>
               </ul>
             </nav>
@@ -260,28 +260,16 @@
 
             <form class="form">
               <div class="form__row">
-                <input type="text" placeholder="фио" class="form__input">
-                <input type="text" placeholder="ссылка на профиль" class="form__input">
+                <input name="username" type="text" placeholder="фио" class="form__input">
+                <input name="userlink" type="text" placeholder="ссылка на профиль" class="form__input">
               </div>
 
               <div class="form__row">
-                <textarea class="form__input form__input--textarea"></textarea>
+                <textarea name="revtext" class="form__input form__input--textarea"></textarea>
                
               </div>
-            </form>
-            
-            <!-- <div class="feedback-user">
-              <div class="feedback-user__neme">
-                <p class="feedback-user__neme-text">Игорь Петрович</p>
-              </div>
-              <div class="feedback-soc">
-                <p class="feedback-soc__vk">Ссылка на профиль VK</p>
-              </div>
-            </div>
-
-            <div class="feedback-reviews">
-              <p class="feedback-reviews__text">Напишите свой честный отзыв</p>
-            </div> -->
+              
+              
             <div class="feedback-services">
               <div class="feedback-services__title">
                 <span class="feedback-services__text">
@@ -321,9 +309,10 @@
               </div>
             </div>
             <div class="feedback__button">
-              <button class="feedback-btn">Очистить</button>
+              <button type="reset" class="feedback-btn">Очистить</button>
               <button class="feedback-btn--red">Отправить</button>
             </div>
+          </form>
           </div>
         </div>
       </section>
@@ -337,13 +326,13 @@
             <div class="footer__menu">
               <ul class="footer-menu__list">
                 <li class="footer-menu__item">
-                  <a href="#" class="footer-menu__link">Главная</a>
+                  <a href="/" class="footer-menu__link">Главная</a>
                 </li>
                 <li class="footer-menu__item">
-                  <a href="#" class="footer-menu__link">Услуги</a>
+                  <a href="/services.html" class="footer-menu__link">Услуги</a>
                 </li>
                 <li class="footer-menu__item">
-                  <a href="#" class="footer-menu__link">Отзывы</a>
+                  <a href="/reviews.html" class="footer-menu__link">Отзывы</a>
                 </li>
               </ul>
             </div>

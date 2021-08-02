@@ -335,6 +335,10 @@ body {
   color: #202123;
 }
 
+.form__input:last-child {
+  margin-right: 0;
+}
+
 .form__input::placeholder {
   color: #666;
 }
