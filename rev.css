@@ -89,7 +89,6 @@ body {
   width: 160px;
   top: 100%;
   border-radius: 5px 5px 5px 5px;
-  /* display: none; */
   opacity: 0;
   transition: opacity 0.4s;
   left: -9999px;
